@@ -7,7 +7,7 @@ ARG FFMPEG_VER="ffmpeg"
 ARG TVH_VER="v4.2.1"
 ARG TZ="Asia/Seoul"
 ARG XMLTV_VER="0.5.69"
-ARG EPG2XML_VER="1.1.8"
+ARG EPG2XML_VER="1.1.9"
 
 # set version label
 ARG BUILD_DATE
