@@ -96,12 +96,3 @@ Socket으로 직접 밀어 넣는 external grabber와는 달리 내부적으로 
 ---|---
 
 설치 방법은 환경 변수에 버전을 명시해주면 된다. 예를 들어 ```FFMPEGBIN_VER=3.3```
-
-## 중요 업데이트 내역
-
-- 2017-04-19:
-  - [linuxserver/docker-tvheadend 변경내역](https://github.com/linuxserver/docker-tvheadend/commit/bac86348983f6b404ee07f60f0e5edf9a7024603) 반영
-  - epg2xml 1.1.7
-  - static ffmpeg binary 옵션화
-- 2017-04-04: ```tv_grab_kr_epg2xml```, ```tv_grab_kr_mc2xml``` 추가
-- 2017-xx-xx: 첫 빌드
