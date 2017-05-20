@@ -4,7 +4,7 @@ MAINTAINER saarg
 # package version
 ARG ARGTABLE_VER="2.13"
 ARG FFMPEG_VER="ffmpeg"
-ARG TVH_VER="v4.2.1"
+ARG TVH_VER="v4.2.2"
 ARG TZ="Asia/Seoul"
 ARG XMLTV_VER="0.5.69"
 ARG EPG2XML_VER="1.1.9"
