@@ -8,6 +8,17 @@ ARG TZ="Asia/Seoul"
 ARG XMLTV_VER="0.5.69"
 ARG EPG2XML_VER="1.1.9"
 
+# set version label
+ARG BUILD_DATE
+ARG VERSION
+LABEL build_version="Build-date:- ${BUILD_DATE}"
+
+# Environment settings
+ENV HOME="/config"
+
+# copy patches
+COPY patches/ /tmp/patches/
+
 # install build packages
 RUN \
  apk add --no-cache --virtual=build-dependencies \
