@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:3.6
+FROM lsiobase/alpine:3.5
 MAINTAINER saarg
 
 # package version
@@ -13,7 +13,7 @@ ARG BUILD_DATE
 ARG VERSION
 LABEL build_version="Build-date:- ${BUILD_DATE}"
 
-# Environment settings
+# environment settings
 ENV HOME="/config"
 
 # copy patches

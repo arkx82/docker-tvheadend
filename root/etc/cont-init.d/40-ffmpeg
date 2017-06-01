@@ -1,10 +1,12 @@
 #!/usr/bin/with-contenv bash
 
 [[ ! -z "${FFMPEGBIN_VER}" ]] && \
+[[ "${FFMPEGBIN_VER}" == "latest" ]] && \
 wget -q https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz -P /tmp && \
 apk add --no-cache xz && \
 cd /tmp && \
 xz -d ffmpeg-release-64bit-static.tar.xz && \
 tar xf ffmpeg-release-64bit-static.tar && \
-cp "/tmp/ffmpeg-${FFMPEGBIN_VER}-64bit-static/ffmpeg" /usr/bin/ffmpeg && \
+find . -name ffmpeg -exec cp {} /usr/bin \; && \
+echo "$(ls | grep -m 1 "ffmpeg") is installed" && \
 rm -rf /tmp/*
